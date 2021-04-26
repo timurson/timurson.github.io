@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kids Jeopardy</title>
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Game CSS -->
+	<link rel="stylesheet" type="text/css" href="css/jeopardy.css">
+</head>
+<body>
+
+    <!-- Main Container -->
+	<div class="d-flex flex-row justify-content-between topBar">
+		<div class="py-3 px-3">
+			<p class="scoreLabel">SCORE: 0</p>
+		</div>
+		<div class="py-2">
+			<img src="images/JeopardyLogo.png" class="img-fluid smallLogo">
+		</div>
+		<div class="py-2">
+			<!-- <img src="images/leaderboard.png" class="leaderboard" onclick="showLeaderBoard()"> -->
+		</div>
+    </div>
+    
+    <!-- Game Board -->
+	<div class="container py-md-3 py-sm-1">
+            <div class="d-flex flex-row justify-content-around flex-wrap flex-xl-nowrap">
+                <div class="d-flex mb-2 mb-xl-0 flex-column justify-content-around">
+                    <div class="category m-1 d-flex justify-content-center align-items-center">English</div>
+                    <div class="question m-1 d-flex justify-content-center align-items-center" onclick="showQuestion(1, 1)">$100</div>
+                    <div class="question m-1 d-flex justify-content-center align-items-center" onclick="showQuestion(1, 2)">$200</div>
+                    <div class="question m-1 d-flex justify-content-center align-items-center" onclick="showQuestion(1, 3)">$300</div>
+                    <div class="question m-1 d-flex justify-content-center align-items-center" onclick="showQuestion(1, 4)">$400</div>
+                    <div class="question m-1 d-flex justify-content-center align-items-center" onclick="showQuestion(1, 5)">$500</div>
+                </div>
+                <div class="d-flex mb-2 mb-xl-0 flex-column justify-content-around">
+                    <div class="category m-1 d-flex justify-content-center align-items-center">Math</div>
+                    <div class="question m-1 d-flex justify-content-center align-items-center" onclick="showQuestion(2, 1)">$100</div>
+                    <div class="question m-1 d-flex justify-content-center align-items-center" onclick="showQuestion(2, 2)">$200</div>
+                    <div class="question m-1 d-flex justify-content-center align-items-center" onclick="showQuestion(2, 3)">$300</div>
+                    <div class="question m-1 d-flex justify-content-center align-items-center" onclick="showQuestion(2, 4)">$400</div>
+                    <div class="question m-1 d-flex justify-content-center align-items-center" onclick="showQuestion(2, 5)">$500</div>
+                </div>
+                <div class="d-flex mb-2 mb-xl-0 flex-column justify-content-around">
+                    <div class="category m-1 d-flex justify-content-center align-items-center">World History</div>
+                    <div class="question m-1 d-flex justify-content-center align-items-center" onclick="showQuestion(3, 1)">$100</div>
+                    <div class="question m-1 d-flex justify-content-center align-items-center" onclick="showQuestion(3, 2)">$200</div>
+                    <div class="question m-1 d-flex justify-content-center align-items-center" onclick="showQuestion(3, 3)">$300</div>
+                    <div class="question m-1 d-flex justify-content-center align-items-center" onclick="showQuestion(3, 4)">$400</div>
+                    <div class="question m-1 d-flex justify-content-center align-items-center" onclick="showQuestion(3, 5)">$500</div>
+                </div>
+                <div class="d-flex mb-2 mb-xl-0 flex-column justify-content-around">
+                    <div class="category m-1 d-flex justify-content-center align-items-center">Science</div>
+                    <div class="question m-1 d-flex justify-content-center align-items-center" onclick="showQuestion(4, 1)">$100</div>
+                    <div class="question m-1 d-flex justify-content-center align-items-center" onclick="showQuestion(4, 2)">$200</div>
+                    <div class="question m-1 d-flex justify-content-center align-items-center" onclick="showQuestion(4, 3)">$300</div>
+                    <div class="question m-1 d-flex justify-content-center align-items-center" onclick="showQuestion(4, 4)">$400</div>
+                    <div class="question m-1 d-flex justify-content-center align-items-center" onclick="showQuestion(4, 5)">$500</div>
+                </div>
+                <div class="d-flex mb-2 mb-xl-0 flex-column justify-content-around">
+                    <div class="category m-1 d-flex justify-content-center align-items-center">Geography</div>
+                    <div class="question m-1 d-flex justify-content-center align-items-center" onclick="showQuestion(5, 1)">$100</div>
+                    <div class="question m-1 d-flex justify-content-center align-items-center" onclick="showQuestion(5, 2)">$200</div>
+                    <div class="question m-1 d-flex justify-content-center align-items-center" onclick="showQuestion(5, 3)">$300</div>
+                    <div class="question m-1 d-flex justify-content-center align-items-center" onclick="showQuestion(5, 4)">$400</div>
+                    <div class="question m-1 d-flex justify-content-center align-items-center" onclick="showQuestion(5, 5)">$500</div>
+                </div>
+                <div class="d-flex mb-2 mb-xl-0 flex-column justify-content-around">
+                    <div class="category m-1 d-flex justify-content-center align-items-center">Potpourri</div>
+                    <div class="question m-1 d-flex justify-content-center align-items-center" onclick="showQuestion(6, 1)">$100</div>
+                    <div class="question m-1 d-flex justify-content-center align-items-center" onclick="showQuestion(6, 2)">$200</div>
+                    <div class="question m-1 d-flex justify-content-center align-items-center" onclick="showQuestion(6, 3)">$300</div>
+                    <div class="question m-1 d-flex justify-content-center align-items-center" onclick="showQuestion(6, 4)">$400</div>
+                    <div class="question m-1 d-flex justify-content-center align-items-center" onclick="showQuestion(6, 5)">$500</div>
+                </div>
+            </div>
+    </div>
+
+    <!-- Question Modal -->
+	<div class="modal fade" tabindex="-1" role="dialog" id="questionModal">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="questionValue">Question Value</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex flex-row">
+                        <div class="imageCropper d-block">
+                            <img src="#" class="rounded-circle personIcon" id="categoryImage">
+                        </div>
+                        <div class="ml-3 mt-2 align-items-center">
+                            <p class="smallLabel" id="categoryLabel">Category Here....</p>
+                            <h4 id="questionText">Question goes here?</h4>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column py-3">
+                        <button type="button" class="btn btn-primary btn-lg btn-block" id="optionA" onclick="submitQuestion()">Option A</button>
+                        <button type="button" class="btn btn-primary btn-lg btn-block" id="optionB" onclick="submitQuestion()">Option B</button>
+                        <button type="button" class="btn btn-primary btn-lg btn-block" id="optionC" onclick="submitQuestion()">Option C</button>
+                        <button type="button" class="btn btn-primary btn-lg btn-block" id="optionD" onclick="submitQuestion()">Option D</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- Game JS -->
+    <script src="js/jeopardy.js"></script>
+    <script src="js/questions.js"></script>
+</body>
+</html>

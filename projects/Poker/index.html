@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Video Poker</title>
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Game CSS -->
+	<link rel="stylesheet" type="text/css" href="css/poker.css">
+</head>
+<body class="background" onload="init()">
+    <!-- Paytable Container -->
+    <div id="paytable_container" class="container">
+        <table id="paytable">
+            <tr id="ROW">
+                <td class="hand"><b>HAND</b></td>
+                <td class ="bet1" style="padding-right:10px"><b>BET1</b></td>
+                <td class ="bet2" style="padding-right:10px"><b>BET2</b></td>
+                <td class ="bet3" style="padding-right:10px"><b>BET3</b></td>
+                <td class ="bet4" style="padding-right:10px"><b>BET4</b></td>
+                <td class ="bet5" style="padding-right:10px"><b>BET5</b></td>
+            </tr>
+        </table>
+    </div>
+     <!-- WIN MESSAGE -->
+    <div id="win_message" class="flex-col"></div>
+    <!-- <div class="d-flex justify-content-center flex-row flex-nowrap">
+        <div id="win_message" class="flex-col"></div>
+    </div> -->
+
+    <!-- Card Container -->
+    <div class="container">
+        <div class="card-group flex-row flex-nowrap my-3">
+            <div id="card1" class="flex-col flex-card">
+                <div class="held" style="visibility:hidden"><p>HELD</p></div>
+                <div class="card mr-2">
+                    <img class="card-img-top card-sprite back" src="images/back.jpg">
+                </div>
+            </div>
+            <div id="card2" class="flex-col flex-card">
+                <div class="held" style="visibility:hidden"><p>HELD</p></div>
+                <div class="card mr-2">
+                    <img class="card-img-top card-sprite back" src="images/back.jpg">
+                </div>
+            </div>
+            <div id="card3" class="flex-col flex-card">
+                <div class="held" style="visibility:hidden"><p>HELD</p></div>
+                <div class="card mr-2">
+                    <img class="card-img-top card-sprite back" src="images/back.jpg">
+                </div>
+            </div>
+            <div id="card4" class="flex-col flex-card">
+                <div class="held" style="visibility:hidden"><p>HELD</p></div>
+                <div class="card mr-2">
+                    <img class="card-img-top card-sprite back" src="images/back.jpg">
+                </div>
+            </div>
+            <div id="card5" class="flex-col flex-card">
+                <div class="held" style="visibility:hidden"><p>HELD</p></div>
+                <div class="card mr-2">
+                    <img class="card-img-top card-sprite back" src="images/back.jpg">
+                </div>
+            </div>   
+        </div>
+    </div>
+
+    <!-- WIN AND CREDITS -->
+    <div class="d-flex justify-content-around flex-row flex-nowrap">
+        <div id="win" class="flex-col">WIN</div>
+        <div id="credits" class="flex-col">CREDITS</div>
+    </div>
+
+    <!-- BET, DEAL and MESSAGING -->
+    <div class="d-flex flex-row flex-nowrap">
+        <div id="instructions" class="p-2 flex-fill text-center align-self-center">Press 'DEAL' to Begin</div>
+        <div class="p-2"><button id="bet_button" type="button" class="btn btn-warning btn-xlarge">BET 5</button></div>
+        <div class="p-2"><button id="deal_button" type="button" class="btn btn-warning btn-xlarge">DEAL</button></div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- Game JS -->
+    <script src="js/poker.js"></script>  
+</body>
+</html>

@@ -1,0 +1,212 @@
+
+.background {
+    background-color: rgb(0,0,160);
+    transform: scale(0.8);
+}
+
+.hand {
+    width:15%;
+    font-size: 1.8vw;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.btn-xlarge {
+    padding: 18px 28px;
+    font-size: 22px;
+    line-height: normal;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+
+#paytable_container {
+    width:95%; 
+    height:30%; 
+    border-style:solid; 
+    border-width:3px;
+    background-color:rgb(0, 0, 64);
+    border-color:rgb(237,237,79);
+    padding: 4px; 
+    display:table; 
+    border-radius:0px;
+    zoom: 0.8;
+	margin-top: -70px;
+}
+
+#paytable {
+    display: table-cell; 
+    vertical-align: middle; 
+    padding:10px; 
+    color:rgb(237,237,79);
+    font-size: 1.8vw;
+}
+
+#card_container {
+    opacity:1.0; 
+    width:100vh; 
+    height:30vh; 
+    left:10px; 
+    top:380px; 
+    position:absolute;
+}
+
+#win {
+    /* width:15%; */
+    padding:10px;
+    margin-top: -40px;
+    color:rgb(237,237,79);
+    font-size: 3.5vw;
+    font-weight: bold;
+}
+
+#win_message {
+    color:rgb(237,237,79);
+    font-size: 4.0vw;
+    font-weight: bold;
+    text-align: center;
+    margin-top: -0.25em;
+    height: 0.7em;
+}
+
+#credits {
+    padding:10px;
+    margin-top: -40px;
+    color:rgb(237,237,79);
+    font-size: 3.5vw;
+    font-weight: bold;
+}
+
+#instructions {
+    color: white;
+    font-size: 2.0vw;
+}
+
+.bet1, .bet2, .bet3, .bet4, .bet5 {
+    width:8%; 
+    text-align:right; 
+    color:rgb(237,237,79); 
+    opacity:1.0;
+    font-size: 2.0vw;
+}
+
+.pay_table_selected {
+    background-color: red;
+    opacity:1.0;
+}
+
+.pay_table_win {
+    color:white;
+    opacity:1.0;
+}
+
+/* ---------- Cards ------------ */
+.card-deck {
+    margin: 0 -15px;
+    justify-content: space-between;
+    margin-top: 100px;
+  }
+  
+.card {
+    margin: 0 0 1rem;
+    z-index:100;
+    border-radius: 8%!important;
+}
+
+.card-sprite {
+    width: 100%;
+    height: 0;
+    padding-bottom: 139.38%;
+    background-repeat: no-repeat;
+    background-size: 1300% 500%;
+    border-radius: 6%!important;
+}
+
+.card-sprite:active {
+    transform: scale(1.1);
+}
+
+/* @media only screen and (min-width: 300px) {
+    
+}
+
+@media only screen and (min-width: 600px) {
+    
+}
+
+@media only screen and (min-width: 992px) {
+    
+} */
+
+.held {
+    width:50%; 
+    height:12%; 
+    position: relative; 
+    z-index:101;  
+    opacity: 1.0; 
+    border-radius:0px; 
+    left:20%; top:-5%;
+    font-size: 100%; text-align: center; background: rgb(0,0,160);
+    color:rgb(255,255,255);display:table;}
+
+.held p {
+    display: table-cell; 
+    vertical-align: middle; 
+    text-align: center;
+}
+
+.back { background-image: url("../images/deck.jpg"); background-position: 0% 100%;}
+.H1  {background-image:url("../images/deck.jpg");  background-position: 0% 0;}
+.H2  {background-image:url("../images/deck.jpg");  background-position: 8.3333% 0;}
+.H3  {background-image:url("../images/deck.jpg");  background-position: 16.6666% 0;}
+.H4  {background-image:url("../images/deck.jpg");  background-position: 25.0% 0;}
+.H5  {background-image:url("../images/deck.jpg");  background-position: 33.3333% 0;}
+.H6  {background-image:url("../images/deck.jpg");  background-position: 41.6666% 0;}
+.H7  {background-image:url("../images/deck.jpg");  background-position: 50.0% 0;}
+.H8  {background-image:url("../images/deck.jpg");  background-position: 58.3333% 0;}
+.H9  {background-image:url("../images/deck.jpg");  background-position: 66.6666% 0;}
+.H10  {background-image:url("../images/deck.jpg");  background-position: 75.0% 0;}
+.H11  {background-image:url("../images/deck.jpg");  background-position: 83.3333% 0;}
+.H12  {background-image:url("../images/deck.jpg");  background-position: 91.6666% 0;}
+.H13  {background-image:url("../images/deck.jpg");  background-position: 100.0% 0;}
+.S1  {background-image:url("../images/deck.jpg");  background-position: 0% 25%;}
+.S2  {background-image:url("../images/deck.jpg");  background-position: 8.3333% 25%;}
+.S3  {background-image:url("../images/deck.jpg");  background-position: 16.6666% 25%;}
+.S4  {background-image:url("../images/deck.jpg");  background-position: 25.0% 25%;}
+.S5  {background-image:url("../images/deck.jpg");  background-position: 33.3333% 25%;}
+.S6  {background-image:url("../images/deck.jpg");  background-position: 41.6666% 25%;}
+.S7  {background-image:url("../images/deck.jpg");  background-position: 50.0% 25%;}
+.S8  {background-image:url("../images/deck.jpg");  background-position: 58.3333% 25%;}
+.S9  {background-image:url("../images/deck.jpg");  background-position: 66.6666% 25%;}
+.S10  {background-image:url("../images/deck.jpg");  background-position: 75.0% 25%;}
+.S11  {background-image:url("../images/deck.jpg");  background-position: 83.3333% 25%;}
+.S12  {background-image:url("../images/deck.jpg");  background-position: 91.6666% 25%;}
+.S13  {background-image:url("../images/deck.jpg");  background-position: 100.0% 25%;}
+.D1  {background-image:url("../images/deck.jpg");  background-position: 0% 50%;}
+.D2  {background-image:url("../images/deck.jpg");  background-position: 8.3333% 50%;}
+.D3  {background-image:url("../images/deck.jpg");  background-position: 16.6666% 50%;}
+.D4  {background-image:url("../images/deck.jpg");  background-position: 25.0% 50%;}
+.D5  {background-image:url("../images/deck.jpg");  background-position: 33.3333% 50%;}
+.D6  {background-image:url("../images/deck.jpg");  background-position: 41.6666% 50%;}
+.D7  {background-image:url("../images/deck.jpg");  background-position: 50.0% 50%;}
+.D8  {background-image:url("../images/deck.jpg");  background-position: 58.3333% 50%;}
+.D9  {background-image:url("../images/deck.jpg");  background-position: 66.6666% 50%;}
+.D10  {background-image:url("../images/deck.jpg");  background-position: 75.0% 50%;}
+.D11  {background-image:url("../images/deck.jpg");  background-position: 83.3333% 50%;}
+.D12  {background-image:url("../images/deck.jpg");  background-position: 91.6666% 50%;}
+.D13  {background-image:url("../images/deck.jpg");  background-position: 100.0% 50%;}
+.C1  {background-image:url("../images/deck.jpg");  background-position: 0% 75%;}
+.C2  {background-image:url("../images/deck.jpg");  background-position: 8.3333% 75%;}
+.C3  {background-image:url("../images/deck.jpg");  background-position: 16.6666% 75%;}
+.C4  {background-image:url("../images/deck.jpg");  background-position: 25.0% 75%;}
+.C5  {background-image:url("../images/deck.jpg");  background-position: 33.3333% 75%;}
+.C6  {background-image:url("../images/deck.jpg");  background-position: 41.6666% 75%;}
+.C7  {background-image:url("../images/deck.jpg");  background-position: 50.0% 75%;}
+.C8  {background-image:url("../images/deck.jpg");  background-position: 58.3333% 75%;}
+.C9  {background-image:url("../images/deck.jpg");  background-position: 66.6666% 75%;}
+.C10  {background-image:url("../images/deck.jpg");  background-position: 75.0% 75%;}
+.C11  {background-image:url("../images/deck.jpg");  background-position: 83.3333% 75%;}
+.C12  {background-image:url("../images/deck.jpg");  background-position: 91.6666% 75%;}
+.C13  {background-image:url("../images/deck.jpg");  background-position: 100.0% 75%;}

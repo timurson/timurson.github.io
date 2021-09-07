@@ -110,7 +110,8 @@ table {
   }
   
 .card {
-    margin: 0 0 1rem;
+	width:20vh;
+    margin: 0 0 2rem;
     z-index:100;
     border-radius: 8%!important;
 }
